@@ -1,104 +1,181 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pengenalan HTML</title>
+    <title>TelNet Laboratory - Web Design Modules</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/telnet-logo-dark.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Pengenalan HTML</h1>
-    <p>HTML digunakan oleh 96% dari semua situs web dan kemungkinan besar oleh semua situs yang kita gunakan secara teratur. HTML adalah singkatan dari HyperText Markup Language.</p>
-    
-    <h2>1. Apa itu HTML?</h2>
-    <p>HyperText adalah teks pada halaman web yang merujuk ke halaman web lain, biasanya dikenal sebagai hyperlink. Menghubungkan informasi melalui hypertext adalah hal yang revolusioner dalam membangun web.</p>
-    
-    <h2>2. Struktur Dasar HTML</h2>
-    <pre>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-            &lt;title&gt;Judul Halaman&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            Konten halaman di sini.
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
-    
-    <h3>A. Elemen HTML</h3>
-    <p>Elemen adalah komponen dasar pembentuk dokumen HTML, terdiri dari tag pembuka, isi, dan tag penutup.</p>
-    
-    <h3>B. Tag HTML</h3>
-    <p>Tag HTML diapit dengan dua karakter siku (&lt; dan &gt;), dan biasanya berpasangan.</p>
-    
-    <h3>C. Atribut HTML</h3>
-    <p>Atribut adalah pelengkap dari elemen HTML, terdiri dari property dan value.</p>
-    
-    <h2>3. Format Teks pada HTML</h2>
-    <p><b>Teks Tebal</b>: Menggunakan tag &lt;b&gt; untuk teks tebal.</p>
-    <p><i>Teks Miring</i>: Menggunakan tag &lt;i&gt; untuk teks miring.</p>
-    <p><u>Teks Bergaris Bawah</u>: Menggunakan tag &lt;u&gt; untuk teks bergaris bawah.</p>
-    
-    <h2>4. HTML Hyperlink</h2>
-    <p>Hyperlink digunakan untuk membuat teks yang dapat diklik untuk berpindah ke halaman lain.</p>
-    <p>Contoh: Kunjungi <a href="https://linktr.ee/d3_tekniktelekomunikasi">D3 Teknologi Telekomunikasi</a></p>
-    
-    <h2>5. HTML List</h2>
-    <h3>A. Ordered List</h3>
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
-    
-    <h3>B. Unordered List</h3>
-    <ul>
-        <li>Item A</li>
-        <li>Item B</li>
-        <li>Item C</li>
-    </ul>
-    
-    <h2>6. HTML Table</h2>
-    <table border="1">
-        <tr>
-            <th>Mata Kuliah Telnet</th>
-            <th>SKS</th>
-        </tr>
-        <tr>
-            <td>Algorithms & Programming</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>Web Design</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>Computer Network</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Cloud Computing</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Telecommunication Network</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Network Security</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Internet of Things</td>
-            <td>2</td>
-        </tr>
-    </table>
-    
-    <h2>7. Menyisipkan Gambar</h2>
-    <p>Untuk menyisipkan gambar, gunakan tag &lt;img&gt;.</p>
-    <img src="https://avatars.githubusercontent.com/u/203100969?v=4" alt="Contoh Gambar">
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-container">
+                <div class="logo-icon"></div>
+                <div class="logo-text">TelNet Laboratory</div>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#courses">Courses</a>
+                <a href="../team.html">Team</a>
+            </div>
+        </nav>
+    </header>
 
-    <footer>&copy; 2025 Telecommunication Network Laboratory. Fakultas Ilmu Terapan. Telkom University.</footer>
-    
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Web Design Course Modules</h1>
+            <p>Kuasai desain web modern melalui 11 modul komprehensif</p>
+            <a href="#modules" class="cta-button">Mulailah Belajar</a>
+        </div>
+    </section>
+
+    <section class="courses" id="modules">
+        <div class="section-title">
+            <h2>Web Design Curriculum</h2>
+            <p>11 Modul untuk Menjadi Desainer Web</p>
+        </div>
+        <div class="courses-grid">
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-1.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Ffeatured%2Fsocial-media-apps-dgwr9vwvb0svnu9w.jpg&f=1&nofb=1&ipt=4747cd0fb199b23c975132f99211837ca5372b4fb693c6feb9744f55bca6ecd3&ipo=images" alt="Web Design">
+                    </div>
+                    <div class="course-content">
+                        <h3>Pengenalan Aplikasi Berbasis Web dan Teks Editor</h3>
+                        <p>Mengenal aplikasi berbasis web, sejarah web, domain, serta konsep client-server.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-2.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4868336.jpg&f=1&nofb=1&ipt=b43122d1468d96a67d6cee5ca5f7d4a873f56224ec7c8a37dc1163df9cd5665b&ipo=images" alt="HTML">
+                    </div>
+                    <div class="course-content">
+                        <h3>HTML (Hyper Text Markup Language)</h3>
+                        <p>Memahami konsep dasar, struktur dasar, sintaks dan elemen HTML.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-3.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp3181452.jpg&f=1&nofb=1&ipt=ce7bce1da7b88d8b4beee6abdf4615903c7f661d86c93628420bfdb1017598ee&ipo=images" alt="CSS">
+                    </div>
+                    <div class="course-content">
+                        <h3>CSS (Cascading Style Sheets)</h3>
+                        <p>Memahami konsep dasar, struktur, framework, dan penggunaan CSS untuk membangun sebuah website.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-7.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://wallpaperaccess.com/full/1555172.jpg" alt="JavaScript">
+                    </div>
+                    <div class="course-content">
+                        <h3>JavaScript</h3>
+                        <p>Memahami cara kerja dan struktur penulisan JavaScript.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-4.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F3255123.jpg&f=1&nofb=1&ipt=92653814b5b720a8f653c5622a86d8b52ac75fe63b7ef098240da6102537a515&ipo=images" alt="PHP">
+                    </div>
+                    <div class="course-content">
+                        <h3>PHP</h3>
+                        <p>Memahami dasar-dasar PHP dan menggunakan sintaks-sintaks PHP.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-5.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fminimalist-database-icon-cycnflysweg912mv.jpg&f=1&nofb=1&ipt=a36bf2b727966da1ca93358b84590532ced69bbb4f05be33c3d9204c04db8c2d&ipo=images" alt="Database">
+                    </div>
+                    <div class="course-content">
+                        <h3>Database</h3>
+                        <p>Mengenal SQL, MySQL, CRUD, dan Basis Data NoSQL.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-6.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg00.deviantart.net%2Fd288%2Fi%2F2016%2F016%2F8%2F4%2Fmysql_wallpaper_by_milesandryprower-d9o6y9z.png&f=1&nofb=1&ipt=13e07102f605f4d4152070e2494550a40f47973975310b21392000fec395e01d&ipo=images" alt="Relasi MySQL">
+                    </div>
+                    <div class="course-content">
+                        <h3>Relasi MySQL & Koneksi MySQL dengan PHP</h3>
+                        <p>Memahami MySQL, CRUD MySQL, dan Relasi MySQL.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-8.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F11145024.jpg&f=1&nofb=1&ipt=0c912e7c778ece89fc9e1e238af0891f0cf727282c58a9fbb72d6ab74599da10&ipo=images" alt="Visualisasi Database">
+                    </div>
+                    <div class="course-content">
+                        <h3>Visualisasi Database Dalam Bentuk Grafik</h3>
+                        <p>Memahami dan membuat visualisasi database dalam bentuk grafik.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-10.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages3.alphacoders.com%2F137%2Fthumb-1920-1376383.jpg&f=1&nofb=1&ipt=db84530955bf01ceadec679b554f14702977e47c1bc742a687a916bc72fb79ef&ipo=images" alt="Laravel">
+                    </div>
+                    <div class="course-content">
+                        <h3>Laravel</h3>
+                        <p>Memahami konsep, fitur, arsitektur, dan mengoperasikan kerangka kerja Laravel.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-9.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperbat.com%2Fimg%2F8622048-git-and-github-at-work.jpg&f=1&nofb=1&ipt=3d3e01ea6d457fb58fcde55c8620cc7c1bada8a5ef250e6d1ceddb3ee30253d4&ipo=images" alt="Web Hosting & GitHub">
+                    </div>
+                    <div class="course-content">
+                        <h3>Web Hosting dan GitHub</h3>
+                        <p>Pelajari cara menggunakan Git dan GitHub untuk pengembangan kolaboratif.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://ricaldocs.github.io/assets/moduls/web_design/modul-11.pdf" target="_blank">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F9432775.png&f=1&nofb=1&ipt=938ebbb42627fd7fb8675520edcbb762a04a1f6e46b45e4f4763c92aed15c3df&ipo=images" alt="Figma">
+                    </div>
+                    <div class="course-content">
+                        <h3>Figma</h3>
+                        <p>Bangun situs web portofolio profesional menggunakan Figma untuk desain UI/UX.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 TelNet Laboratory. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
