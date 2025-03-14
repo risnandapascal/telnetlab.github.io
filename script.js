@@ -14,6 +14,7 @@ function generateTeamMembers() {
                 <h3>${member.name}</h3>
                 <p>${member.position}</p>
                 <div class="social-links">
+                    <a href="team.html"><i class="fa-solid fa-people-group"></i></a>
                     <a href="https://github.com/telnetlab"><i class="fab fa-github"></i></a>
                     <a href="mailto:telnetlab@duck.com"><i class="fas fa-envelope"></i></a>
                 </div>
